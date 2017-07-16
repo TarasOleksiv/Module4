@@ -27,9 +27,9 @@ public class Task2 {
 
     public static void drawRectangle(int n, int m){
         for (int j = 1; j <= m; j++){
-            System.out.println();
+            if (j != 1) {System.out.println();}
             for (int i = 1; i <= n; i++){
-                System.out.print("+");
+                System.out.print("+ ");
             }
         }
     }

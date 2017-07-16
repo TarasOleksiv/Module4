@@ -32,18 +32,10 @@ public class Task4 {
     }
 
     public static int getMax(int n, int m){
-        if (n >= m){
-            return n;
-        } else {
-            return m;
-        }
+        return (n <= m) ? m : n;
     }
 
     public static float getMax(float n, float m){
-        if (n >= m){
-            return n;
-        } else {
-            return m;
-        }
+        return (n <= m) ? m : n;
     }
 }
