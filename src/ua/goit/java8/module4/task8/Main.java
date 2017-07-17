@@ -16,7 +16,7 @@ import java.util.Scanner;
  Если да - опять спрашивает какую задачу.
  *
  */
-public class Task8 {
+public class Main {
     public static void main(String[] args) {
         getChoice();
 
