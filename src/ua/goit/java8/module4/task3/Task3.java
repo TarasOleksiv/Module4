@@ -15,24 +15,29 @@ public class Task3 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Введіть ширину прямокутника: ");
-        int n = sc.nextInt();
-        sc.nextLine();
-        System.out.print("Введіть висоту прямокутника: ");
-        int m = sc.nextInt();
-        sc.nextLine();
-        if (n == m) {
-            drawRectangle(n);
-        } else {
+        System.out.print("Що малюєм? (1 - прямокутник; будь-який інший символ - квадрат). Введіть символ: ");
+        String c = sc.nextLine().trim();
+        if (c.equals("1")) {
+            System.out.print("Введіть ширину прямокутника: ");
+            int n = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Введіть висоту прямокутника: ");
+            int m = sc.nextInt();
+            sc.nextLine();
             drawRectangle(n, m);
+        } else {
+            System.out.print("Введіть розмір квадрата: ");
+            int n = sc.nextInt();
+            drawRectangle(n);
         }
+
     }
 
     public static void drawRectangle(int n, int m){
         for (int j = 1; j <= m; j++){
             System.out.println();
             for (int i = 1; i <= n; i++){
-                System.out.print("+");
+                System.out.print("+ ");
             }
         }
     }
@@ -41,7 +46,7 @@ public class Task3 {
         for (int j = 1; j <= n; j++){
             System.out.println();
             for (int i = 1; i <= n; i++){
-                System.out.print("+");
+                System.out.print("+ ");
             }
         }
     }
