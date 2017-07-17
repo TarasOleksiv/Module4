@@ -30,32 +30,26 @@ public class Main {
             String n = sc.nextLine().trim();
             switch (n) {
                 case "1":
-                    //getTask1();
                     Task1 task1 = new Task1();
                     task1.getTask();
                     break;
                 case "2":
-                    //getTask2();
                     Task2 task2 = new Task2();
                     task2.getTask();
                     break;
                 case "3":
-                    //getTask3();
                     Task3 task3 = new Task3();
                     task3.getTask();
                     break;
                 case "4":
-                    //getTask4();
                     Task4 task4 = new Task4();
                     task4.getTask();
                     break;
                 case "5":
-                    //getTask5();
                     Task5 task5 = new Task5();
                     task5.getTask();
                     break;
                 case "6":
-                    //getTask6();
                     Task6 task6 = new Task6();
                     task6.getTask();
                     break;
