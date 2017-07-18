@@ -26,11 +26,12 @@ public class Task2 {
     }
 
     public static void drawRectangle(int n, int m){
-        for (int j = 1; j <= m; j++){
-            if (j != 1) {System.out.println();}
+        int j = 1;
+        while (j++ <= m){
             for (int i = 1; i <= n; i++){
                 System.out.print("+ ");
             }
+            System.out.println();
         }
     }
 
