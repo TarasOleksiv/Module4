@@ -22,7 +22,7 @@ public class Task5 {
 
     public static String printNumbers(int x){
         if (x == 1) {
-            return "1";
+            return Integer.toString(x);
         }
         return printNumbers(x-1) + " " + x;
     }
